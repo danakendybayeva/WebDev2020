@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+main{
+    width:100%;
+    height: 1000px;
+    background-color: #dfe3ee;
+}
+header{
+    height: 10%;
+    width: 100%;
+    background-color: #3d5b99;
+}
+.header-control{
+    width: 70%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login{
+    float: right;    
+    font-family: Arial;
+    margin-top: 16px;
+}
+.login p{
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.login a{
+    text-decoration: none;
+    color: #9CB2CE;
+}
+
+.input{
+    width: 150px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+@font-face{
+    font-family: "Facebook";
+    src: url(FACEBOLF.OTF);
+}
+
+#logo{
+    font-family: 'Facebook';
+    color: white;
+    font-size: 55px;
+    float: left;
+    margin-top: 20px;
+}
+
+.login_but{
+    background-color: #4267b2;
+    border: 1px solid #29487d;
+    color: #dfe3ee;
+    padding: 05px;
+    margin-left: 7px;
+    border-radius: 3px;
+}
+
+.login_but:hover{
+    background-color: #3b5998;
+}
+
+.content-control{
+    width: 80%;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left{    
+    float: left;
+    width: 400px;
+    margin-left: 70px;
+    margin-top: 20px;
+    font-family: Arial;
+    color: #0e385f;
+}
+
+.left h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.right{
+    margin-top: 20px;
+    margin-right: 70px;
+    float: right;
+}
+
+.right p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ipt{
+    width: 180px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 05px;
+    border-radius: 4px;
+    border: 1px solid #95a5a6;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.ipt2{
+    width: 385px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 05px;
+    border-radius: 4px;
+    border: 1px solid #95a5a6;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.dropdown{
+    width: 60px;
+    height: 30px;
+    margin-left: 05px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 1px solid #95a5a6;
+}
+
+table strong{
+    font-size: 17px;
+    color: #90949C;
+}
+.radio{
+    font-size: 18px;
+    
+}
+
+.radio1{
+    margin-left: 05px;
+    margin-top: 7px;
+}
+
+.terms{
+    margin-left: 05px;
+    margin-top: 20px;
+    font-size: 11px;
+    color: #90949C;
+}
+.terms a{
+    text-decoration: none;
+    color: 	#3b5998;
+}
+
+.signup_but{
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 05px;
+    background-color: #70A842;
+    border: 1px solid #264E1C;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Calibri';
+}
