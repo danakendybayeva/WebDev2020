@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body{
@@ -22,7 +22,6 @@ header{
 h1{
     font-size: 3rem;
     font-weight: 50;
-    margin: 1rem 0.3rem;
     text-align: center;
     color: #000;
     font-family: 'Hind', sans-serif;

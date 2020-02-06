@@ -1,0 +1,163 @@
+body {
+    height: 100%;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Remove margins and padding from the list */
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Hind', sans-serif;
+
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 500px;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    font-size: 1.4rem;
+    font-family: 'Hind', sans-serif;
+    background: none;
+    outline: none;
+    color: silver;
+    border: none;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f44336;
+}
+
+/* Style the header */
+header{
+    width: 100%;
+    background-color: #000;
+    color: #999;
+    float: left;
+    padding: 15px;
+    padding-left: 30px;
+    font-family: 'Hind', sans-serif;
+    font-size: 19px;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 50;
+    text-align: center;
+    color: #000;
+    font-family: 'Hind', sans-serif;
+}
+
+.styling{
+    font-weight: 800;
+    color: coral;
+}
+
+/* Clear floats after the header */
+/* .header:after {
+content: "";
+display: table;
+clear: both;
+} */
+
+.input_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style the input */
+input {
+    padding: 0.5rem 1rem;
+    height: 50px;
+    outline: none;
+    border: 2px solid #999;
+    background-color: #fff;
+    width: 450px;
+    font-size: 1.15rem;
+    margin: 0.25rem;
+    border-radius: 5px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: coral;
+    color: #fff;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    opacity: 0.7;
+}
