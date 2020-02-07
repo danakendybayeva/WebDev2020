@@ -13,6 +13,8 @@ var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
+    console.log(list.children);
+    document.getElementById("myInput").value = this.innerText;
   }
 }, false);
 
