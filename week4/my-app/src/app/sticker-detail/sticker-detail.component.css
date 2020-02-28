@@ -1,0 +1,38 @@
+* {box-sizing: border-box}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 330px;
+    height: auto;
+    border: none;
+    align-items: center;
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.container button{
+    background-color: #3750e0;
+}
+
+.container button a{
+    color: #fff;
+
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

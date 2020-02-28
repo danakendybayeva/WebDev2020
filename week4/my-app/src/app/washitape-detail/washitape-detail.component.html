@@ -1,0 +1,29 @@
+<div class="center">
+    <div class="container">
+        <h3>
+            <a [title]="washitape.name + ' details'">
+                {{ washitape.name }}
+            </a>
+        </h3>
+            <img *ngIf="washitape.image1" [src]=" washitape.image1 " alt="photo" id="zoomImage">
+            <p *ngIf="washitape.price"> 
+                {{washitape.price}} 
+            </p>
+        
+            <p *ngIf="washitape.description">
+            <strong>Description:</strong> <br>{{ washitape.description }}
+            </p>
+        
+            <p *ngIf="washitape.rating">
+                Rating: {{ washitape.rating }}
+            </p>
+        
+            <p *ngIf="washitape.res">
+                <a [href]=" washitape.res " target="_blank">Show in ALiExpress</a>
+            </p>
+        
+            <button onclick="share()">
+                <a href="https://telegram.me/share/url?url={{washitape.res}}text='Look'" target="_blank">Share to Telegram</a>
+            </button>
+    </div>
+</div>

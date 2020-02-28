@@ -1,0 +1,29 @@
+<div class="center">
+    <div class="container">
+        <h3>
+            <a [title]="sticker.name + ' details'">
+                {{ sticker.name }}
+            </a>
+        </h3>
+            <img *ngIf="sticker.image1" [src]=" sticker.image1 " alt="photo" id="zoomImage">
+            <p *ngIf="sticker.price"> 
+                {{sticker.price}} 
+            </p>
+        
+            <p *ngIf="sticker.description">
+            <strong>Description:</strong> <br>{{ sticker.description }}
+            </p>
+        
+            <p *ngIf="sticker.rating">
+                Rating: {{ sticker.rating }}
+            </p>
+        
+            <p *ngIf="sticker.res">
+                <a [href]=" sticker.res " target="_blank">Show in ALiExpress</a>
+            </p>
+        
+            <button onclick="share()">
+                <a href="https://telegram.me/share/url?url={{sticker.res}}text='Look'" target="_blank">Share to Telegram</a>
+            </button>
+    </div>
+</div>

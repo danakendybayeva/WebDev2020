@@ -1,0 +1,29 @@
+<div class="center">
+    <div class="container">
+        <h3>
+            <a [title]="notebook.name + ' details'">
+                {{ notebook.name }}
+            </a>
+        </h3>
+            <img *ngIf="notebook.image1" [src]=" notebook.image1 " alt="photo" id="zoomImage">
+            <p *ngIf="notebook.price"> 
+                {{notebook.price}} 
+            </p>
+        
+            <p *ngIf="notebook.description">
+            <strong>Description:</strong> <br>{{ notebook.description }}
+            </p>
+        
+            <p *ngIf="notebook.rating">
+                Rating: {{ notebook.rating }}
+            </p>
+        
+            <p *ngIf="notebook.res">
+                <a [href]=" notebook.res " target="_blank">Show in ALiExpress</a>
+            </p>
+        
+            <button onclick="share()">
+                <a href="https://telegram.me/share/url?url={{notebook.res}}text='Look'" target="_blank">Share to Telegram</a>
+            </button>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="center">
+    <div class="container">
+        <h3>
+            <a [title]="pen.name + ' details'">
+                {{ pen.name }}
+            </a>
+        </h3>
+            <img *ngIf="pen.image1" [src]=" pen.image1 " alt="photo" id="zoomImage">
+            <p *ngIf="pen.price"> 
+                {{pen.price}} 
+            </p>
+        
+            <p *ngIf="pen.description">
+            <strong>Description:</strong> <br>{{ pen.description }}
+            </p>
+        
+            <p *ngIf="pen.rating">
+                Rating: {{ pen.rating }}
+            </p>
+        
+            <p *ngIf="pen.res">
+                <a [href]=" pen.res " target="_blank">Show in ALiExpress</a>
+            </p>
+        
+            <button onclick="share()">
+                <a href="https://telegram.me/share/url?url={{pen.res}}text='Look'" target="_blank">Share to Telegram</a>
+            </button>
+    </div>
+</div>

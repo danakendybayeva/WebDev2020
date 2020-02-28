@@ -1,0 +1,7 @@
+<ul class="heroes">
+    <li *ngFor="let pen of pens">
+        <a routerLink="/pen/{{pen.id}}">
+            <span class="badge">{{pen.id}}</span> {{pen.name}}
+        </a>
+    </li>
+</ul>

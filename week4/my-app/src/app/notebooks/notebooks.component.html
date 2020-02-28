@@ -1,0 +1,7 @@
+<ul class="heroes">
+    <li *ngFor="let notebook of notebooks">
+        <a routerLink="/notebook/{{notebook.id}}">
+            <span class="badge">{{notebook.id}}</span> {{notebook.name}}
+        </a>
+    </li>
+</ul>

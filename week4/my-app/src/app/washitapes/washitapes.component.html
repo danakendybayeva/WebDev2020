@@ -1,0 +1,7 @@
+<ul class="heroes">
+    <li *ngFor="let washitape of washitapes">
+        <a routerLink="/washitape/{{washitape.id}}">
+            <span class="badge">{{washitape.id}}</span> {{washitape.name}}
+        </a>
+    </li>
+</ul>

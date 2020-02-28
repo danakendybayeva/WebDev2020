@@ -1,0 +1,7 @@
+<ul class="heroes">
+    <li *ngFor="let sticker of stickers">
+        <a routerLink="/sticker/{{sticker.id}}">
+            <span class="badge">{{sticker.id}}</span> {{sticker.name}}
+        </a>
+    </li>
+</ul>
