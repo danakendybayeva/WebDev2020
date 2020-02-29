@@ -1,0 +1,7 @@
+<ul class="heroes">
+    <li *ngFor="let film of films">
+        <a routerLink="/films/{{film.id}}">
+            <span class="badge">{{film.id}}</span> {{film.title}}
+        </a>
+    </li>
+</ul>

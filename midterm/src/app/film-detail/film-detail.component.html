@@ -1,0 +1,16 @@
+<!-- <h2> {{film.title}} </h2>
+<p> <b>Description:</b> <br> {{film.description}} </p>
+<p onload="increaseViews()"> <b>View count:</b> <br> {{film.view_count}} </p> -->
+<div class="center">
+    <div class="container">
+        <h3>
+            {{film.title}}
+        </h3>
+        <p *ngIf="film.description">
+            <strong>Description: </strong> <br> {{film.description}}
+        </p>
+        <p>
+            View count: <span>{{film.view_count}}</span>
+        </p>
+    </div>
+</div>
