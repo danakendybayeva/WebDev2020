@@ -1,5 +1,6 @@
-def monkey_trouble(a_smile, b_smile):
-  if((a_smile and b_smile) or ((not a_smile) and (not b_smile))):
-    return True 
+def xyz_there(str):
+  str = str.replace('.xyz', '')
+  if 'xyz' in str:
+    return True
   else:
-    return False  
+    return False

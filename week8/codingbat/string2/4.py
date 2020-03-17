@@ -1,5 +1,6 @@
-def monkey_trouble(a_smile, b_smile):
-  if((a_smile and b_smile) or ((not a_smile) and (not b_smile))):
-    return True 
-  else:
-    return False  
+def count_code(str):
+  cnt = 0
+  for i in range(len(str)-3):
+    if str[i] == "c" and str[i+1] == "o" and str[i+3] == "e":
+      cnt += 1
+  return cnt

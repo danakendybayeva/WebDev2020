@@ -1,5 +1,6 @@
-def sleep_in(weekday, vacation):
-  if(not weekday or vacation):
-    return True
-  else:
-    return False
+def double_char(str):
+  res = ""
+  for i in range(len(str)):
+    res += str[i] + str[i]
+    
+  return res
