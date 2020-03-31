@@ -1,0 +1,5 @@
+the folder 'demo-env' is just practice that I did
+the folder 'new-env' is the lab8 homework
+
+login: admin
+password: 1234
