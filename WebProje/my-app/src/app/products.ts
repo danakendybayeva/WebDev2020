@@ -5,7 +5,8 @@ export interface Product{
     author: string;
     description: string;
     price: string;
-    rating: string;
+    rating: number;
+    year: number;
     genre: number;
 }
 

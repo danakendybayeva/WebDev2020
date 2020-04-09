@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
+// import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+// import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -15,13 +18,16 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { MainComponent } from './main/main.component';
+import { PopularComponent } from './popular/popular.component';
+import { NewBooksComponent } from './new-books/new-books.component';
 
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   declarations: [
     AppComponent,
@@ -33,7 +39,9 @@ import { MainComponent } from './main/main.component';
     NavbarComponent,
     LoginComponent,
     SignUpComponent,
-    MainComponent
+    MainComponent,
+    PopularComponent,
+    NewBooksComponent
   ],
   providers: [ ],
   bootstrap: [ AppComponent ]
