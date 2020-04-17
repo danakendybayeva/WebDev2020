@@ -1,5 +1,5 @@
 <div>
   <div *ngFor="let company of companies">
-    <a routerLink="/companies/{{company.id}}/vacancies">{{ company.name }}</a>
+    <a [routerLink]="'/companies/' + company.id + '/vacancies'">{{ company.name }}</a>
   </div>
 </div>
