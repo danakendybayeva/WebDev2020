@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Vacancy } from '../vacancy';
+import { Vacancy } from '../models';
 import { CompanyService } from '../company.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';

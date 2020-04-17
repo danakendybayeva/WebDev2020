@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CompanyService } from '../company.service';
-import { Company } from '../company';
+import { Company } from '../models';
 
 @Component({
   selector: 'app-company',
@@ -19,7 +19,7 @@ export class CompanyComponent implements OnInit {
   getCompanyList(){
     this.companyService.getCompanyList()
       .subscribe(companies => {
-        this.companies = companies
+        this.companies = companies;
       });
   }
 
