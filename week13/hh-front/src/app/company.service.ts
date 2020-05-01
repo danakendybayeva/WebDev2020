@@ -29,14 +29,14 @@ export class CompanyService {
     return this.http.get<Company>(`${this.BASE_URL}/api/vacancies/${id}/`);
   }
 
+  getVacanciesByCompanyId(companyId): Observable<Vacancy[]> {
+    return this.http.get<Vacancy[]>(`${this.BASE_URL}/api/companies/${companyId}/vacancies/`);
+  }
+
   login(username, password): Observable<LoginResponse> {
     return this.http.post<LoginResponse>(`${this.BASE_URL}/api/login/`, {
       username,
       password
     });
-  }
-
-  getVacanciesByCompanyId(companyId): Observable<Vacancy[]> {
-    return this.http.get<Vacancy[]>(`${this.BASE_URL}/api/companies/${companyId}/vacancies/`);
   }
 }

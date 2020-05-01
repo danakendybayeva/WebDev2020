@@ -11,6 +11,7 @@ import { Location } from '@angular/common';
 })
 export class VacancyComponent implements OnInit {
   vacancies: Vacancy[];
+  vacancy: Vacancy;
 
   constructor(private companyService: CompanyService,
               private location: Location,

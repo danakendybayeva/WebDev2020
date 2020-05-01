@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CompanyService } from '../company.service';
-import { Company } from '../models';
+import { Company, Vacancy } from '../models';
 
 @Component({
   selector: 'app-company',
@@ -9,6 +9,7 @@ import { Company } from '../models';
 })
 export class CompanyComponent implements OnInit {
   companies: Company[];
+  vacancies: Vacancy[];
 
   constructor(public companyService: CompanyService) { }
 
